@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# dépendances : enscript, ps2pdf
-# commentaires :
-# Le script converti un fichier texte en postscript et poscript en pdf
-# Simple et ça peut être utile !
+# dépendancies : enscript, ps2pdf
+# comments :
+# It converts a text to postscript and postcript to pdf
+# Simple and probably useful.
 
 if [ $# -ne 2 ]
 then
