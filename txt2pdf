@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# dépendances : enscript, ps2pdf
+# commentaires :
+# Le script converti un fichier texte en postscript et poscript en pdf
+# Simple et ça peut être utile !
+
+if [ $# -ne 2 ]
+then
+clear
+echo -e "syntax error\n\n"$0" <fichier.txt> <output.pdf>"
+fi
+
+if [ $# -eq 2 ]
+then
+clear
+enscript $1 -o - | ps2pdf - $2
+fi
